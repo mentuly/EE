@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Додати новий тур:</h2>
+    <form method="post">
+        <label for="name">Назва туру:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="destination">Місце призначення:</label><br>
+        <input type="text" id="destination" name="destination" required><br><br>
+        <label for="price">Ціна:</label><br>
+        <input type="number" id="price" name="price" step="0.01" required><br><br>
+        <input type="submit" value="Додати тур">
+    </form>
+{% endblock %}
